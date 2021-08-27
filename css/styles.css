@@ -139,6 +139,7 @@ img {
 .header-info {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
 
 .header-infolist:not(:last-child) {
@@ -156,6 +157,18 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 /*--------------------------HERO--------------------------*/
 .section.hero {
@@ -227,49 +240,25 @@ img {
 .best-list {
   width: 270px;
 }
-.list-details::before {
-  content: '';
-  display: block;
-  height: 120px;
+.anten,
+.time,
+.computer,
+.astronavt {
+  display: flex;
   background-color: #f5f4fa;
-  background-image: url(../images/Group\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.anten-logo,
+.time-logo,
+.astronavt-logo,
+.computer-logo {
+  width: 70px;
+  height: 70px;
 }
 
-.punctuality-list::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/Group\ 2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.planning-list::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/Group\ 3.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.technologies-list::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/Group\ 4.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
 .best-work {
   display: flex;
 }
@@ -314,7 +303,7 @@ img {
 
 .text-team {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -323,7 +312,6 @@ img {
 
 .team-list {
   display: flex;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
 .dude + .dude {
@@ -333,10 +321,47 @@ img {
 .dude {
   text-align: center;
   width: 270px;
+  box-shadow: 0 2px 1px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%);
 }
 
 .block {
   padding: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.social-team {
+  display: flex;
+  justify-content: center;
+}
+.social {
+  width: 44px;
+  height: 44px;
+}
+.logo-link:hover,
+.logo-link:focus {
+  background-color: var(--main-akcent-color);
+}
+.logo-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  background-color: #ffffff;
+}
+.logo-link:hover .inlogo,
+.logo-link:focus .inlogo {
+  fill: #ffffff;
+}
+
+.social + .social {
+  margin-left: 10px;
+}
+.inlogo {
+  width: 20px;
+  height: 20px;
 }
 
 /*--------------------------FOOTER------------------------*/
@@ -392,6 +417,21 @@ img {
 .footer-list:not(:last-child) {
   display: block;
   margin-bottom: 9px;
+}
+.appeal {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
 }
 
 /*----------------------Портфолио--------------------*/

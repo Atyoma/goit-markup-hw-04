@@ -98,7 +98,8 @@ img {
 
 .header-mail,
 .header-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -159,14 +160,14 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .envelope {
-  width: 16px;
-  height: 12px;
+  /*width: 16px;
+  height: 12px;*/
   fill: currentColor;
   margin-right: 10px;
 }
 .smartphone {
-  width: 10px;
-  height: 16px;
+  /*width: 10px;
+  height: 16px;*/
   fill: currentColor;
   margin-right: 10px;
 }
@@ -179,7 +180,6 @@ img {
 }
 
 .overlay {
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -386,7 +386,7 @@ img {
 }
 
 .regular {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .inlogo-company {
   width: 106px;
@@ -460,6 +460,7 @@ img {
   margin-bottom: 9px;
 }
 .appeal {
+  /*padding-top: 12px;*/
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -473,17 +474,10 @@ img {
 }
 .container.footer-block {
   display: flex;
+  align-items: baseline;
 }
 .social-footer {
-  display: flex;
-  width: 206px;
-  height: 80px;
-  margin-right: auto;
-  padding-bottom: 100px;
   margin-left: 70px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: baseline;
 }
 
 .social-list {
@@ -509,9 +503,9 @@ img {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-logo-link.twitter {
+/*.footer-logo-link.twitter {
   background-color: var(--main-akcent-color);
-}
+}*/
 
 /*----------------------Портфолио--------------------*/
 .btn {
@@ -526,6 +520,7 @@ img {
   border-radius: 4px;
   min-width: 73px;
   padding: 6px 22px;
+  border: 0;
 }
 
 .btn:hover,
@@ -592,8 +587,10 @@ img {
 .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
-.item:hover {
+.pics {
+  display: block;
+}
+.pics:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }

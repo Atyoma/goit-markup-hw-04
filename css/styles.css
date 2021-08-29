@@ -489,7 +489,7 @@ img {
   width: 44px;
   height: 44px;
 }
-.social-footer-list:not(last-child) {
+.social-footer-list:not(:last-child) {
   margin-right: 10px;
 }
 
